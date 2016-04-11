@@ -8,9 +8,9 @@
 </head>
 <body>
 
-	<div class="wrapper">
+	<div class="wrapper container-fluid">
 
-		<header class="container-fluid">
+		<header>
 			<h1>Die Laughing Design</h1>
 			<h2>Paul Ryan Anderson's Portfolio</h2>
 
@@ -25,18 +25,38 @@
 
 		</header>
 
-		<main class="container">
+		<main>
 
-			<section id="hero">
+			<section id="hero" class="row">
 				<p>Welcome to Die Laughing Design</p>
 				<p>Paul Ryan Anderson's Portfolio site</p>
 				<p>Learn a little bit about me, checkout my portfolio and shoot me a message if you
 					are in interested in having me do some work for you.
 				</p>
 			</section>
-			<section id="about"></section>
-			<section id="portfolio"></section>
-			<section id="contact"></section>
+			<section id="about" class="row">
+				<div class="container">
+					<div class="col-md-6">
+						<img src="lib/img/paul.png">
+					</div>
+					<div class="col-md-6">
+						<h2>About Me</h2>
+						<p>
+							Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+						</p>
+					</div>
+					<div class="proficiencies col-md-12">
+						<ul>
+							<li id="html">HTML</li>
+							<li id="css">CSS</li>
+							<li id="js">JavaScript</li>
+							<li id="wp">WordPress</li>
+						</ul>	
+					</div>
+				</div>
+			</section>
+			<section id="portfolio" class="row"></section>
+			<section id="contact" class="row"></section>
 
 		</main>
 
