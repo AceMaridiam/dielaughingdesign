@@ -114,12 +114,13 @@ nav li:last-child:hover {
 
 /* line 36, ../sass/partials/_main.scss */
 main section {
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   background: #B9B9B9;
   border-top: 1px solid #000;
 }
 
-/* line 44, ../sass/partials/_main.scss */
+/* line 45, ../sass/partials/_main.scss */
 .proficiencies li {
   width: 90%;
   padding: 20px;
@@ -127,4 +128,20 @@ main section {
   border: 2px solid #000;
   margin: 5px 0;
   text-align: right;
+}
+/* line 53, ../sass/partials/_main.scss */
+.proficiencies #html {
+  background: #5BC0EB;
+}
+/* line 56, ../sass/partials/_main.scss */
+.proficiencies #css {
+  background: #FDE74C;
+}
+/* line 59, ../sass/partials/_main.scss */
+.proficiencies #js {
+  background: #9BC53D;
+}
+/* line 62, ../sass/partials/_main.scss */
+.proficiencies #wp {
+  background: #FA7921;
 }
