@@ -1,4 +1,7 @@
 nav {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
 	a {
 		padding: 4em;
 		text-align: center;
@@ -9,7 +12,7 @@ nav {
 			background: $blue;
 			&:hover {
 				background: shade($blue, 40%);
-			color: $white;
+				color: $white;
 			}
 		}
 		&:nth-child(2) {
@@ -42,7 +45,56 @@ main {
 	#hero {
 		position: relative;
 		overflow: hidden;
+		min-height: 100vh;
+		padding-top: 100px;
+		@media screen and (min-width: $large) {
+			min-height: 100vh;
+		}
 		.welcome {
+			background: $white;
+			position: absolute;
+			z-index: 30;
+			width: 60%;
+			top: 20%;
+			right: 50px;
+			padding: 20px;
+			box-shadow: 10px 10px 35px $black;
+			&:before {
+				content: "";
+				position: absolute;
+				box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 7px;
+				-moz-transform: rotate(45deg);
+				-webkit-transform: rotate(45deg);
+				bottom: -9px;
+				left: 50px;
+				border-width: 10px;
+				border-style: solid;
+				border-color: transparent $white $white transparent;
+			}
+			h1 {
+				font-size: 3vw;
+				text-transform: uppercase;
+			}
+		}
+	}
+	#about {
+		padding-top: 150px;
+		position: relative;
+		min-height: 100vh;
+		@media screen and (max-width: $phone) {
+			padding-top: 17%;
+		}
+		img {
+			position: absolute;
+			z-index: 20;
+			top: 8vh;
+			@media screen and (max-width: $tablet) {
+				top: 390px;
+				max-height: 400px;
+				position: absolute;
+			}
+		}
+		.intro {
 			background: $white;
 			position: absolute;
 			z-index: 30;
@@ -63,17 +115,32 @@ main {
 				border-style: solid;
 				border-color: transparent $white $white transparent;
 			}
+			@media screen and (max-width: $phone) {
+				background: $white;
+				position: relative;
+				z-index: 10;
+				width: inherit;
+				top: inherit;
+				right: inherit;
+				padding: 20px;
+				box-shadow: 10px 10px 35px $black;
+			}
 		}
 	}
 	section {
 		height: auto;
-		min-height: 100%;
+		min-height: 50%;
 		background: $grey;
 		border-top: 1px solid $black;
 	}
 }
 
 .proficiencies {
+	padding: 0;
+	margin-top: -20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	li {
 		width: 90%;
 		padding: 20px;

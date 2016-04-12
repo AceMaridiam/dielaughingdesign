@@ -248,16 +248,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @keyframes moonglow {
   0% {
-    box-shadow: 0 0 20px 10px #fff, 0 0 100px 20px #B9B9B9, 0 0 100px 40px #0ff;
+    filter: drop-shadow(5px 5px 5px #222);
   }
   50% {
-    box-shadow: 0 0 50px 10px #fff, 0 0 100px 60px #B9B9B9, 0 0 140px 90px #0ff;
+    filter: drop-shadow(5px 5px 5px #222);
   }
   100% {
-    box-shadow: 0 0 20px 10px #fff, 0 0 100px 20px #B9B9B9, 0 0 100px 40px #0ff;
+    filter: drop-shadow(5px 5px 5px #222);
   }
 }
-/* line 2, ../sass/partials/_main.scss */
+/* line 1, ../sass/partials/_main.scss */
+nav {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+/* line 5, ../sass/partials/_main.scss */
 nav a {
   padding: 4em;
   text-align: center;
@@ -265,56 +271,119 @@ nav a {
   cursor: pointer;
   color: #000;
 }
-/* line 8, ../sass/partials/_main.scss */
+/* line 11, ../sass/partials/_main.scss */
 nav a:first-child {
   background: #5BC0EB;
 }
-/* line 10, ../sass/partials/_main.scss */
+/* line 13, ../sass/partials/_main.scss */
 nav a:first-child:hover {
   background: #36738d;
   color: #fff;
 }
-/* line 15, ../sass/partials/_main.scss */
+/* line 18, ../sass/partials/_main.scss */
 nav a:nth-child(2) {
   background: #FDE74C;
 }
-/* line 17, ../sass/partials/_main.scss */
+/* line 20, ../sass/partials/_main.scss */
 nav a:nth-child(2):hover {
   background: #978a2d;
   color: #fff;
 }
-/* line 22, ../sass/partials/_main.scss */
+/* line 25, ../sass/partials/_main.scss */
 nav a:nth-child(3) {
   background: #9BC53D;
 }
-/* line 24, ../sass/partials/_main.scss */
+/* line 27, ../sass/partials/_main.scss */
 nav a:nth-child(3):hover {
   background: #5d7624;
   color: #fff;
 }
-/* line 29, ../sass/partials/_main.scss */
+/* line 32, ../sass/partials/_main.scss */
 nav a:last-child {
   background: #FA7921;
 }
-/* line 31, ../sass/partials/_main.scss */
+/* line 34, ../sass/partials/_main.scss */
 nav a:last-child:hover {
   background: #964813;
   color: #fff;
 }
 @media screen and (max-width: 600px) {
-  /* line 2, ../sass/partials/_main.scss */
+  /* line 5, ../sass/partials/_main.scss */
   nav a {
     padding: 25px;
   }
 }
 
-/* line 42, ../sass/partials/_main.scss */
+/* line 45, ../sass/partials/_main.scss */
 main #hero {
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
+  padding-top: 100px;
 }
-/* line 45, ../sass/partials/_main.scss */
+@media screen and (min-width: 1500px) {
+  /* line 45, ../sass/partials/_main.scss */
+  main #hero {
+    min-height: 100vh;
+  }
+}
+/* line 53, ../sass/partials/_main.scss */
 main #hero .welcome {
+  background: #fff;
+  position: absolute;
+  z-index: 30;
+  width: 60%;
+  top: 20%;
+  right: 50px;
+  padding: 20px;
+  box-shadow: 10px 10px 35px #000;
+}
+/* line 62, ../sass/partials/_main.scss */
+main #hero .welcome:before {
+  content: "";
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: -9px;
+  left: 50px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+}
+/* line 74, ../sass/partials/_main.scss */
+main #hero .welcome h1 {
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+/* line 80, ../sass/partials/_main.scss */
+main #about {
+  padding-top: 150px;
+  position: relative;
+  min-height: 100vh;
+}
+@media screen and (max-width: 600px) {
+  /* line 80, ../sass/partials/_main.scss */
+  main #about {
+    padding-top: 17%;
+  }
+}
+/* line 87, ../sass/partials/_main.scss */
+main #about img {
+  position: absolute;
+  z-index: 20;
+  top: 8vh;
+}
+@media screen and (max-width: 768px) {
+  /* line 87, ../sass/partials/_main.scss */
+  main #about img {
+    top: 390px;
+    max-height: 400px;
+    position: absolute;
+  }
+}
+/* line 97, ../sass/partials/_main.scss */
+main #about .intro {
   background: #fff;
   position: absolute;
   z-index: 30;
@@ -324,8 +393,8 @@ main #hero .welcome {
   padding: 20px;
   box-shadow: 10px 10px 35px #000;
 }
-/* line 54, ../sass/partials/_main.scss */
-main #hero .welcome:before {
+/* line 106, ../sass/partials/_main.scss */
+main #about .intro:before {
   content: "";
   position: absolute;
   box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 7px;
@@ -337,15 +406,36 @@ main #hero .welcome:before {
   border-style: solid;
   border-color: transparent #fff #fff transparent;
 }
-/* line 68, ../sass/partials/_main.scss */
+@media screen and (max-width: 600px) {
+  /* line 97, ../sass/partials/_main.scss */
+  main #about .intro {
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    width: inherit;
+    top: inherit;
+    right: inherit;
+    padding: 20px;
+    box-shadow: 10px 10px 35px #000;
+  }
+}
+/* line 130, ../sass/partials/_main.scss */
 main section {
   height: auto;
-  min-height: 100%;
+  min-height: 50%;
   background: #B9B9B9;
   border-top: 1px solid #000;
 }
 
-/* line 77, ../sass/partials/_main.scss */
+/* line 138, ../sass/partials/_main.scss */
+.proficiencies {
+  padding: 0;
+  margin-top: -20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* line 144, ../sass/partials/_main.scss */
 .proficiencies li {
   width: 90%;
   padding: 20px;
@@ -354,19 +444,19 @@ main section {
   margin: 5px 0;
   text-align: right;
 }
-/* line 85, ../sass/partials/_main.scss */
+/* line 152, ../sass/partials/_main.scss */
 .proficiencies #html {
   background: #5BC0EB;
 }
-/* line 88, ../sass/partials/_main.scss */
+/* line 155, ../sass/partials/_main.scss */
 .proficiencies #css {
   background: #FDE74C;
 }
-/* line 91, ../sass/partials/_main.scss */
+/* line 158, ../sass/partials/_main.scss */
 .proficiencies #js {
   background: #9BC53D;
 }
-/* line 94, ../sass/partials/_main.scss */
+/* line 161, ../sass/partials/_main.scss */
 .proficiencies #wp {
   background: #FA7921;
 }
