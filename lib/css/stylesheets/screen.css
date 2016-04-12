@@ -67,52 +67,277 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/******************************
+	Sky gradients - Provided by http://codepen.io/zessx/
+******************************/
+/* line 5, ../sass/base/_sky.scss */
+.sky-gradient-0, .sky-gradient-24 {
+  background: #00000c;
+}
+
+/* line 6, ../sass/base/_sky.scss */
+.sky-gradient-01 {
+  background: linear-gradient(to bottom, #020111 85%, #191621 100%);
+}
+
+/* line 7, ../sass/base/_sky.scss */
+.sky-gradient-02 {
+  background: linear-gradient(to bottom, #020111 60%, #20202c 100%);
+}
+
+/* line 8, ../sass/base/_sky.scss */
+.sky-gradient-03 {
+  background: linear-gradient(to bottom, #020111 10%, #3a3a52 100%);
+}
+
+/* line 9, ../sass/base/_sky.scss */
+.sky-gradient-04 {
+  background: linear-gradient(to bottom, #20202c 0%, #515175 100%);
+}
+
+/* line 10, ../sass/base/_sky.scss */
+.sky-gradient-05 {
+  background: linear-gradient(to bottom, #40405c 0%, #6f71aa 80%, #8a76ab 100%);
+}
+
+/* line 11, ../sass/base/_sky.scss */
+.sky-gradient-06 {
+  background: linear-gradient(to bottom, #4a4969 0%, #7072ab 50%, #cd82a0 100%);
+}
+
+/* line 12, ../sass/base/_sky.scss */
+.sky-gradient-07 {
+  background: linear-gradient(to bottom, #757abf 0%, #8583be 60%, #eab0d1 100%);
+}
+
+/* line 13, ../sass/base/_sky.scss */
+.sky-gradient-08 {
+  background: linear-gradient(to bottom, #82addb 0%, #ebb2b1 100%);
+}
+
+/* line 14, ../sass/base/_sky.scss */
+.sky-gradient-09 {
+  background: linear-gradient(to bottom, #94c5f8 1%, #a6e6ff 70%, #b1b5ea 100%);
+}
+
+/* line 15, ../sass/base/_sky.scss */
+.sky-gradient-10 {
+  background: linear-gradient(to bottom, #b7eaff 0%, #94dfff 100%);
+}
+
+/* line 16, ../sass/base/_sky.scss */
+.sky-gradient-11 {
+  background: linear-gradient(to bottom, #9be2fe 0%, #67d1fb 100%);
+}
+
+/* line 17, ../sass/base/_sky.scss */
+.sky-gradient-12 {
+  background: linear-gradient(to bottom, #90dffe 0%, #38a3d1 100%);
+}
+
+/* line 18, ../sass/base/_sky.scss */
+.sky-gradient-13 {
+  background: linear-gradient(to bottom, #57c1eb 0%, #246fa8 100%);
+}
+
+/* line 19, ../sass/base/_sky.scss */
+.sky-gradient-14 {
+  background: linear-gradient(to bottom, #2d91c2 0%, #1e528e 100%);
+}
+
+/* line 20, ../sass/base/_sky.scss */
+.sky-gradient-15 {
+  background: linear-gradient(to bottom, #2473ab 0%, #1e528e 70%, #5b7983 100%);
+}
+
+/* line 21, ../sass/base/_sky.scss */
+.sky-gradient-16 {
+  background: linear-gradient(to bottom, #1e528e 0%, #265889 50%, #9da671 100%);
+}
+
+/* line 22, ../sass/base/_sky.scss */
+.sky-gradient-17 {
+  background: linear-gradient(to bottom, #1e528e 0%, #728a7c 50%, #e9ce5d 100%);
+}
+
+/* line 23, ../sass/base/_sky.scss */
+.sky-gradient-18 {
+  background: linear-gradient(to bottom, #154277 0%, #576e71 30%, #e1c45e 70%, #b26339 100%);
+}
+
+/* line 24, ../sass/base/_sky.scss */
+.sky-gradient-19 {
+  background: linear-gradient(to bottom, #163C52 0%, #4F4F47 30%, #C5752D 60%, #B7490F 80%, #2F1107 100%);
+}
+
+/* line 25, ../sass/base/_sky.scss */
+.sky-gradient-20 {
+  background: linear-gradient(to bottom, #071B26 0%, #071B26 30%, #8A3B12 80%, #240E03 100%);
+}
+
+/* line 26, ../sass/base/_sky.scss */
+.sky-gradient-21 {
+  background: linear-gradient(to bottom, #010A10 30%, #59230B 80%, #2F1107 100%);
+}
+
+/* line 27, ../sass/base/_sky.scss */
+.sky-gradient-22 {
+  background: linear-gradient(to bottom, #090401 50%, #4B1D06 100%);
+}
+
+/* line 28, ../sass/base/_sky.scss */
+.sky-gradient-23 {
+  background: linear-gradient(to bottom, #00000c 80%, #150800 100%);
+}
+
+/* line 30, ../sass/base/_sky.scss */
+#moon {
+  position: absolute;
+  left: 45%;
+  width: 152px;
+  height: 152px;
+  background-image: url("http://localhost:8888/dielaughingmedia-sun_to_moon/images/moon.png");
+  background-size: cover;
+  z-index: 2;
+}
+
+/* line 39, ../sass/base/_sky.scss */
+#sun {
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: #fff;
+}
+
+/* line 48, ../sass/base/_sky.scss */
+.skyline {
+  width: 100%;
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+}
+
+/* line 56, ../sass/base/_sky.scss */
+.sunglow {
+  animation: sunglow 4s infinite;
+  -webkit-animation: sunglow 4s infinite;
+  -moz-animation: sunglow 4s infinite;
+  -o-animation: sunglow 4s infinite;
+}
+
+/* line 62, ../sass/base/_sky.scss */
+.moonglow {
+  animation: moonglow 4s infinite;
+  -webkit-animation: moonglow 4s infinite;
+  -moz-animation: moonglow 4s infinite;
+  -o-animation: moonglow 4s infinite;
+}
+
+@keyframes sunglow {
+  0% {
+    box-shadow: 0 0 20px 10px #fff, 0 0 100px 20px #FDE74C, 0 0 100px 40px #0ff;
+  }
+  50% {
+    box-shadow: 0 0 50px 10px #fff, 0 0 100px 60px #FDE74C, 0 0 140px 90px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #fff, 0 0 100px 20px #FDE74C, 0 0 100px 40px #0ff;
+  }
+}
+@keyframes moonglow {
+  0% {
+    box-shadow: 0 0 20px 10px #fff, 0 0 100px 20px #B9B9B9, 0 0 100px 40px #0ff;
+  }
+  50% {
+    box-shadow: 0 0 50px 10px #fff, 0 0 100px 60px #B9B9B9, 0 0 140px 90px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #fff, 0 0 100px 20px #B9B9B9, 0 0 100px 40px #0ff;
+  }
+}
 /* line 2, ../sass/partials/_main.scss */
-nav li {
+nav a {
   padding: 4em;
   text-align: center;
   transition: 1s;
-}
-/* line 6, ../sass/partials/_main.scss */
-nav li:first-child {
-  background: #5BC0EB;
+  cursor: pointer;
+  color: #000;
 }
 /* line 8, ../sass/partials/_main.scss */
-nav li:first-child:hover {
-  background: #36738d;
+nav a:first-child {
+  background: #5BC0EB;
 }
-/* line 12, ../sass/partials/_main.scss */
-nav li:nth-child(2) {
+/* line 10, ../sass/partials/_main.scss */
+nav a:first-child:hover {
+  background: #36738d;
+  color: #fff;
+}
+/* line 15, ../sass/partials/_main.scss */
+nav a:nth-child(2) {
   background: #FDE74C;
 }
-/* line 14, ../sass/partials/_main.scss */
-nav li:nth-child(2):hover {
+/* line 17, ../sass/partials/_main.scss */
+nav a:nth-child(2):hover {
   background: #978a2d;
+  color: #fff;
 }
-/* line 18, ../sass/partials/_main.scss */
-nav li:nth-child(3) {
+/* line 22, ../sass/partials/_main.scss */
+nav a:nth-child(3) {
   background: #9BC53D;
 }
-/* line 20, ../sass/partials/_main.scss */
-nav li:nth-child(3):hover {
-  background: #5d7624;
-}
 /* line 24, ../sass/partials/_main.scss */
-nav li:last-child {
+nav a:nth-child(3):hover {
+  background: #5d7624;
+  color: #fff;
+}
+/* line 29, ../sass/partials/_main.scss */
+nav a:last-child {
   background: #FA7921;
 }
-/* line 26, ../sass/partials/_main.scss */
-nav li:last-child:hover {
+/* line 31, ../sass/partials/_main.scss */
+nav a:last-child:hover {
   background: #964813;
+  color: #fff;
 }
 @media screen and (max-width: 600px) {
   /* line 2, ../sass/partials/_main.scss */
-  nav li {
+  nav a {
     padding: 25px;
   }
 }
 
-/* line 36, ../sass/partials/_main.scss */
+/* line 42, ../sass/partials/_main.scss */
+main #hero {
+  position: relative;
+  overflow: hidden;
+}
+/* line 45, ../sass/partials/_main.scss */
+main #hero .welcome {
+  background: #fff;
+  position: absolute;
+  z-index: 30;
+  width: 60%;
+  top: 50px;
+  right: 50px;
+  padding: 20px;
+  box-shadow: 10px 10px 35px #000;
+}
+/* line 54, ../sass/partials/_main.scss */
+main #hero .welcome:before {
+  content: "";
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: -10px;
+  left: 50px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+}
+/* line 68, ../sass/partials/_main.scss */
 main section {
   height: auto;
   min-height: 100%;
@@ -120,7 +345,7 @@ main section {
   border-top: 1px solid #000;
 }
 
-/* line 45, ../sass/partials/_main.scss */
+/* line 77, ../sass/partials/_main.scss */
 .proficiencies li {
   width: 90%;
   padding: 20px;
@@ -129,19 +354,19 @@ main section {
   margin: 5px 0;
   text-align: right;
 }
-/* line 53, ../sass/partials/_main.scss */
+/* line 85, ../sass/partials/_main.scss */
 .proficiencies #html {
   background: #5BC0EB;
 }
-/* line 56, ../sass/partials/_main.scss */
+/* line 88, ../sass/partials/_main.scss */
 .proficiencies #css {
   background: #FDE74C;
 }
-/* line 59, ../sass/partials/_main.scss */
+/* line 91, ../sass/partials/_main.scss */
 .proficiencies #js {
   background: #9BC53D;
 }
-/* line 62, ../sass/partials/_main.scss */
+/* line 94, ../sass/partials/_main.scss */
 .proficiencies #wp {
   background: #FA7921;
 }
