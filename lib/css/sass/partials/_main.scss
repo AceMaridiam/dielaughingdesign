@@ -13,6 +13,7 @@ nav {
 			&:not(.active):hover {
 				background: shade($blue, 40%);
 				color: $white;
+				margin-bottom: 0;
 			}
 		}
 		&:nth-child(2) {
@@ -56,21 +57,24 @@ main {
 		    position: absolute;
 		    width: 100%;
 		    z-index: 10;
-			&:before {
-				content: "";
-				position: absolute;
-				box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 7px;
-				-moz-transform: rotate(45deg);
-				-webkit-transform: rotate(45deg);
-				bottom: -9px;
-				left: 50px;
-				border-width: 10px;
-				border-style: solid;
-				border-color: transparent rgb(138, 220, 253) rgb(138, 220, 253) transparent;
-			}
+			// &:before {
+			// 	content: "";
+			// 	position: absolute;
+			// 	box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 7px;
+			// 	-moz-transform: rotate(45deg);
+			// 	-webkit-transform: rotate(45deg);
+			// 	bottom: -9px;
+			// 	left: 50px;
+			// 	border-width: 10px;
+			// 	border-style: solid;
+			// 	border-color: transparent rgb(138, 220, 253) rgb(138, 220, 253) transparent;
+			// }
 			h1 {
 				font-size: 3vw;
 				text-transform: uppercase;
+			}
+			img {
+				max-width: 100%;
 			}
 		}
 	}
@@ -133,7 +137,10 @@ main {
 	#contact {
 		min-height: 100vh;
 		background: $orange;
-		padding-top: 25%;
+		padding-top: 27%;
+		@media screen and (max-width: $phone) {
+			padding-top: 27%;
+		}
 		form {
 			width: 100%;
 			input {
@@ -145,6 +152,9 @@ main {
 		.social {
 			text-align: center;
 			padding: 20px 0;
+			i {
+				padding: 20px;
+			}
 			.fa {
 				color: $black;
 				font-size: 2em;
@@ -152,6 +162,18 @@ main {
 				&:hover {
 					color: $white;
 				}
+			}
+			div:first-child {
+				background: $blue;
+			}
+			div:nth-child(2) {
+				background: $yellow;
+			}
+			div:nth-child(3) {
+				background: $green;
+			}
+			div:last-child {
+				background: $red;
 			}
 		}
 	}

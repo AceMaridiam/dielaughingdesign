@@ -292,30 +292,31 @@ nav a:first-child {
 nav a:first-child:not(.active):hover {
   background: #36738d;
   color: #fff;
+  margin-bottom: 0;
 }
-/* line 18, ../sass/partials/_main.scss */
+/* line 19, ../sass/partials/_main.scss */
 nav a:nth-child(2) {
   background: #FDE74C;
 }
-/* line 20, ../sass/partials/_main.scss */
+/* line 21, ../sass/partials/_main.scss */
 nav a:nth-child(2):not(.active):hover {
   background: #978a2d;
   color: #fff;
 }
-/* line 25, ../sass/partials/_main.scss */
+/* line 26, ../sass/partials/_main.scss */
 nav a:nth-child(3) {
   background: #9BC53D;
 }
-/* line 27, ../sass/partials/_main.scss */
+/* line 28, ../sass/partials/_main.scss */
 nav a:nth-child(3):not(.active):hover {
   background: #5d7624;
   color: #fff;
 }
-/* line 32, ../sass/partials/_main.scss */
+/* line 33, ../sass/partials/_main.scss */
 nav a:last-child {
   background: #FA7921;
 }
-/* line 34, ../sass/partials/_main.scss */
+/* line 35, ../sass/partials/_main.scss */
 nav a:last-child:not(.active):hover {
   background: #964813;
   color: #fff;
@@ -327,19 +328,19 @@ nav a:last-child:not(.active):hover {
   }
 }
 
-/* line 45, ../sass/partials/_main.scss */
+/* line 46, ../sass/partials/_main.scss */
 main #hero {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
 }
 @media screen and (min-width: 1500px) {
-  /* line 45, ../sass/partials/_main.scss */
+  /* line 46, ../sass/partials/_main.scss */
   main #hero {
     min-height: 100vh;
   }
 }
-/* line 52, ../sass/partials/_main.scss */
+/* line 53, ../sass/partials/_main.scss */
 main #hero .welcome {
   background: linear-gradient(to bottom, #5BC0EB 60%, rgba(103, 209, 251, 0) 100%);
   padding: 15% 20px 20px;
@@ -348,36 +349,27 @@ main #hero .welcome {
   width: 100%;
   z-index: 10;
 }
-/* line 59, ../sass/partials/_main.scss */
-main #hero .welcome:before {
-  content: "";
-  position: absolute;
-  box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 7px;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  bottom: -9px;
-  left: 50px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent #8adcfd #8adcfd transparent;
-}
-/* line 71, ../sass/partials/_main.scss */
+/* line 72, ../sass/partials/_main.scss */
 main #hero .welcome h1 {
   font-size: 3vw;
   text-transform: uppercase;
 }
-/* line 77, ../sass/partials/_main.scss */
+/* line 76, ../sass/partials/_main.scss */
+main #hero .welcome img {
+  max-width: 100%;
+}
+/* line 81, ../sass/partials/_main.scss */
 main #about {
   position: relative;
   min-height: 100vh;
 }
 @media screen and (max-width: 600px) {
-  /* line 77, ../sass/partials/_main.scss */
+  /* line 81, ../sass/partials/_main.scss */
   main #about {
     padding-top: 65px;
   }
 }
-/* line 83, ../sass/partials/_main.scss */
+/* line 87, ../sass/partials/_main.scss */
 main #about img {
   position: absolute;
   z-index: 20;
@@ -386,21 +378,21 @@ main #about img {
   bottom: 225px;
 }
 @media screen and (max-width: 768px) {
-  /* line 83, ../sass/partials/_main.scss */
+  /* line 87, ../sass/partials/_main.scss */
   main #about img {
     bottom: 235px;
     max-height: 400px;
     padding: 0;
   }
 }
-/* line 97, ../sass/partials/_main.scss */
+/* line 101, ../sass/partials/_main.scss */
 main #about .intro {
   background: #FDE74C;
   position: relative;
   padding: 150px 20px 20px;
   box-shadow: 10px 10px 35px #000;
 }
-/* line 106, ../sass/partials/_main.scss */
+/* line 110, ../sass/partials/_main.scss */
 main #about .intro:before {
   content: "";
   position: absolute;
@@ -414,7 +406,7 @@ main #about .intro:before {
   border-color: transparent #FDE74C #FDE74C transparent;
 }
 @media screen and (max-width: 600px) {
-  /* line 97, ../sass/partials/_main.scss */
+  /* line 101, ../sass/partials/_main.scss */
   main #about .intro {
     position: relative;
     z-index: 10;
@@ -425,43 +417,69 @@ main #about .intro:before {
     box-shadow: 10px 10px 35px #000;
   }
 }
-/* line 129, ../sass/partials/_main.scss */
+/* line 133, ../sass/partials/_main.scss */
 main #portfolio {
   min-height: 100vh;
   background: #9BC53D;
 }
-/* line 133, ../sass/partials/_main.scss */
+/* line 137, ../sass/partials/_main.scss */
 main #contact {
   min-height: 100vh;
   background: #FA7921;
-  padding-top: 25%;
+  padding-top: 27%;
 }
-/* line 137, ../sass/partials/_main.scss */
+@media screen and (max-width: 600px) {
+  /* line 137, ../sass/partials/_main.scss */
+  main #contact {
+    padding-top: 27%;
+  }
+}
+/* line 144, ../sass/partials/_main.scss */
 main #contact form {
   width: 100%;
 }
-/* line 139, ../sass/partials/_main.scss */
+/* line 146, ../sass/partials/_main.scss */
 main #contact form input {
   width: 100%;
   margin: 5px 0;
   padding: 20px;
 }
-/* line 145, ../sass/partials/_main.scss */
+/* line 152, ../sass/partials/_main.scss */
 main #contact .social {
   text-align: center;
   padding: 20px 0;
 }
-/* line 148, ../sass/partials/_main.scss */
+/* line 155, ../sass/partials/_main.scss */
+main #contact .social i {
+  padding: 20px;
+}
+/* line 158, ../sass/partials/_main.scss */
 main #contact .social .fa {
   color: #000;
   font-size: 2em;
   transition: 1s;
 }
-/* line 152, ../sass/partials/_main.scss */
+/* line 162, ../sass/partials/_main.scss */
 main #contact .social .fa:hover {
   color: #fff;
 }
-/* line 158, ../sass/partials/_main.scss */
+/* line 166, ../sass/partials/_main.scss */
+main #contact .social div:first-child {
+  background: #5BC0EB;
+}
+/* line 169, ../sass/partials/_main.scss */
+main #contact .social div:nth-child(2) {
+  background: #FDE74C;
+}
+/* line 172, ../sass/partials/_main.scss */
+main #contact .social div:nth-child(3) {
+  background: #9BC53D;
+}
+/* line 175, ../sass/partials/_main.scss */
+main #contact .social div:last-child {
+  background: #E55934;
+}
+/* line 180, ../sass/partials/_main.scss */
 main section {
   height: auto;
   min-height: 50%;
@@ -469,7 +487,7 @@ main section {
   border-top: 1px solid #000;
 }
 
-/* line 166, ../sass/partials/_main.scss */
+/* line 188, ../sass/partials/_main.scss */
 .proficiencies {
   padding: 0;
   margin-top: -20px;
@@ -477,7 +495,7 @@ main section {
   bottom: 0;
   width: 100%;
 }
-/* line 172, ../sass/partials/_main.scss */
+/* line 194, ../sass/partials/_main.scss */
 .proficiencies li {
   width: 90%;
   padding: 20px;
@@ -486,19 +504,19 @@ main section {
   margin: 5px 0;
   text-align: right;
 }
-/* line 180, ../sass/partials/_main.scss */
+/* line 202, ../sass/partials/_main.scss */
 .proficiencies #html {
   background: #5BC0EB;
 }
-/* line 183, ../sass/partials/_main.scss */
+/* line 205, ../sass/partials/_main.scss */
 .proficiencies #css {
   background: #FDE74C;
 }
-/* line 186, ../sass/partials/_main.scss */
+/* line 208, ../sass/partials/_main.scss */
 .proficiencies #js {
   background: #9BC53D;
 }
-/* line 189, ../sass/partials/_main.scss */
+/* line 211, ../sass/partials/_main.scss */
 .proficiencies #wp {
   background: #FA7921;
 }
