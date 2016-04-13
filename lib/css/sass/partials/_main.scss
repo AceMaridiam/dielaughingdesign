@@ -50,14 +50,12 @@ main {
 			min-height: 100vh;
 		}
 		.welcome {
-			background: $blue;
-			// position: absolute;
-			// z-index: 30;
-			// width: 60%;
-			// top: 20%;
-			// right: 50px;
-			padding: 15% 20px 20px;
-			box-shadow: 10px 10px 35px $black;
+			background: linear-gradient(to bottom, $blue 60%, rgba(103, 209, 251, 0) 100%);
+		    padding: 15% 20px 20px;
+		    box-shadow: 10px 10px 35px #000;
+		    position: absolute;
+		    width: 100%;
+		    z-index: 10;
 			&:before {
 				content: "";
 				position: absolute;
@@ -68,7 +66,7 @@ main {
 				left: 50px;
 				border-width: 10px;
 				border-style: solid;
-				border-color: transparent $white $white transparent;
+				border-color: transparent rgb(138, 220, 253) rgb(138, 220, 253) transparent;
 			}
 			h1 {
 				font-size: 3vw;
@@ -142,6 +140,18 @@ main {
 				width: 100%;
 			    margin: 5px 0;
 			    padding: 20px;
+			}
+		}
+		.social {
+			text-align: center;
+			padding: 20px 0;
+			.fa {
+				color: $black;
+				font-size: 2em;
+				transition: 1s;
+				&:hover {
+					color: $white;
+				}
 			}
 		}
 	}
