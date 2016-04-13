@@ -81,6 +81,7 @@ main {
 		padding-top: 150px;
 		position: relative;
 		min-height: 100vh;
+		background: $yellow;
 		@media screen and (max-width: $phone) {
 			padding-top: 17%;
 		}
@@ -124,6 +125,23 @@ main {
 				right: inherit;
 				padding: 20px;
 				box-shadow: 10px 10px 35px $black;
+			}
+		}
+	}
+	#portfolio {
+		min-height: 100vh;
+		background: $green;
+	}
+	#contact {
+		min-height: 100vh;
+		background: $orange;
+		padding-top: 25%;
+		form {
+			width: 100%;
+			input {
+				width: 100%;
+			    margin: 5px 0;
+			    padding: 20px;
 			}
 		}
 	}
