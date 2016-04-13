@@ -10,6 +10,17 @@ $green: #9BC53D;
 $orange: #FA7921;
 $red: #E55934;
 
+// Fonts
+
+// Typography
+p, a, span, li, h1, h2, h3, h4 {
+	font-family: sans-serif;
+}
+h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
 // Media Queries
 
 $large: 1500px;

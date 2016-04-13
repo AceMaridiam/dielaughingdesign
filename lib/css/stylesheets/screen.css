@@ -67,11 +67,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 16, ../sass/base/_var.scss */
+p, a, span, li, h1, h2, h3, h4 {
+  font-family: sans-serif;
+}
+
+/* line 19, ../sass/base/_var.scss */
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
 /******************************
 	Sky gradients - Provided by http://codepen.io/zessx/
 ******************************/
 /* line 5, ../sass/base/_sky.scss */
-.sky-gradient-0, .sky-gradient-24 {
+.sky-gradient-00, .sky-gradient-24 {
   background: #00000c;
 }
 
@@ -276,7 +287,7 @@ nav a:first-child {
   background: #5BC0EB;
 }
 /* line 13, ../sass/partials/_main.scss */
-nav a:first-child:hover {
+nav a:first-child:not(.active):hover {
   background: #36738d;
   color: #fff;
 }
@@ -285,7 +296,7 @@ nav a:nth-child(2) {
   background: #FDE74C;
 }
 /* line 20, ../sass/partials/_main.scss */
-nav a:nth-child(2):hover {
+nav a:nth-child(2):not(.active):hover {
   background: #978a2d;
   color: #fff;
 }
@@ -294,7 +305,7 @@ nav a:nth-child(3) {
   background: #9BC53D;
 }
 /* line 27, ../sass/partials/_main.scss */
-nav a:nth-child(3):hover {
+nav a:nth-child(3):not(.active):hover {
   background: #5d7624;
   color: #fff;
 }
@@ -303,7 +314,7 @@ nav a:last-child {
   background: #FA7921;
 }
 /* line 34, ../sass/partials/_main.scss */
-nav a:last-child:hover {
+nav a:last-child:not(.active):hover {
   background: #964813;
   color: #fff;
 }
@@ -319,7 +330,6 @@ main #hero {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  padding-top: 100px;
 }
 @media screen and (min-width: 1500px) {
   /* line 45, ../sass/partials/_main.scss */
@@ -327,18 +337,13 @@ main #hero {
     min-height: 100vh;
   }
 }
-/* line 53, ../sass/partials/_main.scss */
+/* line 52, ../sass/partials/_main.scss */
 main #hero .welcome {
-  background: #fff;
-  position: absolute;
-  z-index: 30;
-  width: 60%;
-  top: 20%;
-  right: 50px;
-  padding: 20px;
+  background: #5BC0EB;
+  padding: 15% 20px 20px;
   box-shadow: 10px 10px 35px #000;
 }
-/* line 62, ../sass/partials/_main.scss */
+/* line 61, ../sass/partials/_main.scss */
 main #hero .welcome:before {
   content: "";
   position: absolute;
@@ -351,66 +356,61 @@ main #hero .welcome:before {
   border-style: solid;
   border-color: transparent #fff #fff transparent;
 }
-/* line 74, ../sass/partials/_main.scss */
+/* line 73, ../sass/partials/_main.scss */
 main #hero .welcome h1 {
   font-size: 3vw;
   text-transform: uppercase;
 }
-/* line 80, ../sass/partials/_main.scss */
+/* line 79, ../sass/partials/_main.scss */
 main #about {
-  padding-top: 150px;
   position: relative;
   min-height: 100vh;
-  background: #FDE74C;
 }
 @media screen and (max-width: 600px) {
-  /* line 80, ../sass/partials/_main.scss */
+  /* line 79, ../sass/partials/_main.scss */
   main #about {
-    padding-top: 17%;
+    padding-top: 65px;
   }
 }
-/* line 88, ../sass/partials/_main.scss */
+/* line 85, ../sass/partials/_main.scss */
 main #about img {
   position: absolute;
   z-index: 20;
-  top: 8vh;
+  max-height: 500px;
+  padding: 0 30%;
+  bottom: 225px;
 }
 @media screen and (max-width: 768px) {
-  /* line 88, ../sass/partials/_main.scss */
+  /* line 85, ../sass/partials/_main.scss */
   main #about img {
-    top: 390px;
+    bottom: 235px;
     max-height: 400px;
-    position: absolute;
+    padding: 0;
   }
 }
-/* line 98, ../sass/partials/_main.scss */
+/* line 99, ../sass/partials/_main.scss */
 main #about .intro {
-  background: #fff;
-  position: absolute;
-  z-index: 30;
-  width: 60%;
-  top: 50px;
-  right: 50px;
-  padding: 20px;
+  background: #FDE74C;
+  position: relative;
+  padding: 150px 20px 20px;
   box-shadow: 10px 10px 35px #000;
 }
-/* line 107, ../sass/partials/_main.scss */
+/* line 108, ../sass/partials/_main.scss */
 main #about .intro:before {
   content: "";
   position: absolute;
   box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 7px;
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  bottom: -10px;
-  left: 50px;
+  bottom: -8px;
+  left: 50%;
   border-width: 10px;
   border-style: solid;
-  border-color: transparent #fff #fff transparent;
+  border-color: transparent #FDE74C #FDE74C transparent;
 }
 @media screen and (max-width: 600px) {
-  /* line 98, ../sass/partials/_main.scss */
+  /* line 99, ../sass/partials/_main.scss */
   main #about .intro {
-    background: #fff;
     position: relative;
     z-index: 10;
     width: inherit;
