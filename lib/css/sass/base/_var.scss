@@ -12,15 +12,23 @@ $red: #E55934;
 
 // Fonts
 
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Anton|Dancing+Script);
+
 // Typography
 p, a, span, li, h1, h2, h3, h4 {
 	font-family: sans-serif;
 	padding: 5px 0;
 }
+h1 {
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-family: 'Anton', sans-serif;
+}
 h2 {
 	font-size: 2em;
-	text-transform: uppercase;
 	padding: 10px 0;
+	font-family: 'Dancing Script', cursive;
 }
 
 // Media Queries
