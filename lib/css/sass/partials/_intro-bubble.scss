@@ -1,0 +1,30 @@
+.intro {
+  background: $white;
+  position: relative;
+  padding: 20px;
+  box-shadow: 10px 10px 35px $black;
+  &:before {
+    content: "";
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 7px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    bottom: -8px;
+    left: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent $white $white transparent;
+  }
+  @media screen and (max-width: $phone) {
+    padding: 10px;
+    z-index: 10;
+    width: inherit;
+    top: inherit;
+    right: inherit;
+    box-shadow: 10px 10px 35px $black;
+  }
+  @media screen and (max-height: 640px) {
+    height: 70px;
+    overflow: hidden;
+  }
+}

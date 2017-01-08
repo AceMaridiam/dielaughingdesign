@@ -4,31 +4,30 @@ $black: #000;
 $white: #fff;
 $grey: #B9B9B9;
 $gray: $grey;
-$blue: #5BC0EB;
-$yellow: #FDE74C;
-$green: #9BC53D;
-$orange: #FA7921;
-$red: #E55934;
 
 // Fonts
 
 @import url(https://fonts.googleapis.com/css?family=Anton);
 @import url(https://fonts.googleapis.com/css?family=Anton|Dancing+Script);
+@font-face {
+    font-family: evilGenius;
+    src: url(../../font/evilgeniusbb_reg.otf);
+}
 
 // Typography
 p, a, span, li, h1, h2, h3, h4 {
-	font-family: sans-serif;
+	font-family: evilGenius;
 	padding: 5px 0;
 }
 h1 {
 	font-size: 2.5em;
 	text-transform: uppercase;
-	font-family: 'Anton', sans-serif;
+	font-family: evilGenius;
 }
 h2 {
 	font-size: 2em;
 	padding: 10px 0;
-	font-family: 'Dancing Script', cursive;
+	font-family: evilGenius;
 }
 
 // Media Queries
@@ -37,3 +36,7 @@ $large: 1500px;
 $desktop: 1050px;
 $tablet: 768px;
 $phone: 600px;
+
+// Sun and moon
+
+$sunDimension: 176px;

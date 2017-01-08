@@ -1,0 +1,30 @@
+.social {
+  text-align: center;
+  padding: 20px 0;
+  i {
+    padding: 20px;
+  }
+  .fa {
+    color: $black;
+    font-size: 2em;
+    transition: 1s;
+    &:hover {
+      color: $white;
+    }
+  }
+  div {
+    padding: 0;
+  }
+  div:first-child {
+    background: $black;
+  }
+  div:nth-child(2) {
+    background: $white;
+  }
+  div:nth-child(3) {
+    background: $black;
+  }
+  div:last-child {
+    background: $black;
+  }
+}

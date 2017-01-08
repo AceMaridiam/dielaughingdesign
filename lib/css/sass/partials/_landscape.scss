@@ -1,0 +1,33 @@
+@media screen and (max-height: 640px) {
+	nav a {
+		padding-top: .8em;
+		padding-bottom: .8em;
+	}
+	main {
+		#hero .welcome {
+			padding-top: 30px;
+			h1 {
+				font-size: 4.3vw;
+				padding-top: 25px;
+			}
+			h2 {
+				font-size: 4vw;
+			}
+		}
+		#about {
+			img {
+				bottom: 0;
+			    left: 5%;
+			    max-height: 75vh;
+			}
+			.intro {	
+				height: 100px;
+				padding-top: 50px;
+			}
+		}
+	}
+
+	bottom: 20%;
+    right: 35%;
+    max-height: 150px;
+}

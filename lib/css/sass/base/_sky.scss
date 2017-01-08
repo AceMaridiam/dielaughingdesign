@@ -32,18 +32,32 @@
     left:45%;
     width:152px;
     height:152px;
-    background-image: url("http://localhost:8888/dielaughingmedia-sun_to_moon/images/moon.png");
+    background-image: url("http://localhost:8888/dielaughingdesign/lib/img/moon.png");
     background-size: cover;
     z-index:2;
 }
 #sun {
     position:absolute;
-    width:152px;
-    height:152px; 
+    width:$sunDimension;
+    height:$sunDimension;
     border-radius: 50%;
     z-index:2;
     background-color: #fff;
-   
+
+    @media screen and (max-width: $desktop) {
+      width: $sunDimension;
+      height: $sunDimension;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: ($sunDimension / 2);
+      height: ($sunDimension / 2);
+    }
+
+    @media screen and (max-width: $phone) {
+      width: ($sunDimension / 3);
+      height: ($sunDimension / 3);
+    }
 }
 .skyline {
 	width: 100%;
@@ -52,7 +66,7 @@
 	bottom: 0;
 }
 
-// animations 
+// animations
 .sunglow {
  animation: sunglow 4s infinite;
  -webkit-animation: sunglow 4s infinite;
@@ -65,33 +79,33 @@
  -moz-animation: moonglow 4s infinite;
  -o-animation: moonglow 4s infinite;
 }
- 
+
 @keyframes sunglow {
- 0%{ box-shadow: 
+ 0%{ box-shadow:
  		0 0 20px 10px $white,
- 		0 0 100px 20px $yellow,
+ 		0 0 100px 20px $black,
  		0 0 100px 40px #0ff
  	}
  50% { box-shadow:
  		0 0 50px 10px $white,
- 		0 0 100px 60px $yellow,
+ 		0 0 100px 60px $black,
  		0 0 140px 90px #0ff
   	 }
  100% { box-shadow:
  		0 0 20px 10px $white,
- 		0 0 100px 20px $yellow,
+ 		0 0 100px 20px $black,
  		0 0 100px 40px #0ff
      }
 }
 @keyframes moonglow {
- 0%{ 
+ 0%{
   	filter: drop-shadow(5px 5px 5px #222);
 	}
- 50% { 
- 
+ 50% {
+
   	filter: drop-shadow(5px 5px 5px #222);
   	 }
- 100% { 
+ 100% {
   	filter: drop-shadow(5px 5px 5px #222);
      }
 }

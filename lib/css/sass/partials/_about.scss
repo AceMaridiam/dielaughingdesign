@@ -1,0 +1,16 @@
+#about {
+  position: relative;
+  min-height: 100vh;
+  img {
+    position: absolute;
+    z-index: 20;
+    max-height: 500px;
+    padding: 0 30%;
+    bottom: 225px;
+    @media screen and (max-width: $tablet) {
+      bottom: 235px;
+      max-height: 400px;
+      padding: 0;
+    }
+  }
+}
