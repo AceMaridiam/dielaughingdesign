@@ -1,4 +1,13 @@
 section {
   position: relative;
-  min-height: 100vh;
+  overflow: hidden;
+
+  @media screen and (min-width: $desktop) {
+		border-left: 5px solid $black;
+		border-right: 5px solid $black;
+	}
+
+  &:last-of-type {
+    min-height: auto;
+  }
 }

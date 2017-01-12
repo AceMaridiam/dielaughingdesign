@@ -3,29 +3,32 @@
 	<title>Die Laughing Design</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- Yup! It's Bootstrap. Probably overkill for this site. Note to self, use simple media queries for future update. -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="lib/css/stylesheets/screen.css">
+	<!-- How can I not use something called Font-Awesome!? -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
 </head>
 <body>
 
-	<div class="wrapper container-fluid">
+	<header>
 
-		<header>
+		<nav>
+			<a href="#hero" class="col-xs-3 col-sm-3 col-md-3 active"><span class="glyphicon glyphicon-home"></span></a>
+			<a href="#about" class="col-xs-3 col-sm-3 col-md-3"><span class="glyphicon glyphicon-user"></span></a>
+			<a href="#portfolio" class="col-xs-3 col-sm-3 col-md-3"><span class="glyphicon glyphicon-book"></span></a>
+			<a href="#contact" class="col-xs-3 col-sm-3 col-md-3"><span class="glyphicon glyphicon-earphone"></span></a>
+		</nav>
 
-			<nav class="row">
-				<a href="#hero" class="col-xs-3 col-sm-3 col-md-3 active"><span class="glyphicon glyphicon-home"></span></a>
-				<a href="#about" class="col-xs-3 col-sm-3 col-md-3"><span class="glyphicon glyphicon-user"></span></a>
-				<a href="#portfolio" class="col-xs-3 col-sm-3 col-md-3"><span class="glyphicon glyphicon-book"></span></a>
-				<a href="#contact" class="col-xs-3 col-sm-3 col-md-3"><span class="glyphicon glyphicon-earphone"></span></a>
-			</nav>
+	</header>
 
-		</header>
+	<div class="wrapper">
 
 		<main>
 
-			<section id="hero" class="row">
+			<!--Hero Section -->
+			<section id="hero">
 				<div class="welcome intro">
 					<h1>Welcome to my Portfolio</h1>
 				</div>
@@ -33,99 +36,110 @@
 				<div id="sun" class="orbit sunglow"></div>
 				<img class="skyline" src="lib/img/skyline.png">
 			</section>
-			<section id="about" class="row">
+
+			<!-- About Section -->
+			<section id="about" >
 				<div class="intro">
 					<h2>About Me</h2>
-					<p>
-						Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-					</p>
-				</div>
-				<div class="proficiencies col-md-12">
-					<ul>
-						<li id="html">HTML</li>
-						<li id="css">CSS</li>
-						<li id="js">JavaScript</li>
-						<li id="wp">WordPress</li>
+					<ul class="tab-menu">
+						<li class="active">Who am I?</li>
+						<li>What do I know?</li>
+						<li>My hobbies</li>
+						<li>Fun facts!</li>
 					</ul>
 				</div>
-			</section>
-			<section id="portfolio" class="row">
-				<div class="content container">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					    <li data-target="#myCarousel" data-slide-to="1"></li>
-					    <li data-target="#myCarousel" data-slide-to="2"></li>
-					    <li data-target="#myCarousel" data-slide-to="3"></li>
-					  </ol>
-
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner" role="listbox">
-					    <div class="item active">
-					      	<img src="lib/img/bestapples.jpg" alt="Best Apples">
-					      	<div class="item-info">
-					      		<p>WordPress site built from scratch a Photoshop design.</p>
-					      	</div>
-					    </div>
-
-					    <div class="item">
-					      <img src="lib/img/hardcoreflorist.jpg" alt="hardcore Florist">
-					    </div>
-
-					    <div class="item">
-					      <img src="lib/img/freebox.jpg" alt="Freebox">
-					    </div>
-
-					  </div>
-
-					  <!-- Left and right controls -->
-					  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					    <span class="sr-only">Previous</span>
-					  </a>
-					  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					    <span class="sr-only">Next</span>
-					  </a>
+				<div class="container">
+					<div class="tab-content">
+						<p>
+							1. Hi, I'm Paul.
+							I've been studying web design and development for over 5 years;
+							after transitioning from video production.
+							I wanted to learn how to build dynamic multimedia driven websites for various projects I was involved in.
+							The hobbie became an obsession and a drive to get better.
+							Web development can be puzzle like, and I really like puzzles.
+						</p>
+						<p>
+							2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed tincidunt ante. Sed est lorem, convallis id facilisis nec, facilisis vitae lorem. Morbi dignissim sit amet erat a semper.
+							Ut bibendum ligula tortor, quis placerat mauris laoreet in. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec libero ante, hendrerit at quam at, consequat sodales ipsum.
+							Proin eu faucibus lectus. Sed vitae massa in nulla efficitur egestas. Nunc odio erat, sagittis a ultrices sed, malesuada non diam. Duis faucibus libero eu metus placerat, a lacinia urna blandit. Vivamus ac maximus ipsum.
+							Vivamus eu iaculis nulla. Vivamus nisi diam, pellentesque id dui vel, pulvinar posuere lectus. Quisque nibh turpis, tempus quis eros a, aliquam vehicula metus. Ut maximus ligula eros, nec posuere felis lobortis ac.
+						</p>
+						<p>
+							3. I enjoy video production on my terms; when I'm not bound by the restriction of a client.
+							I'm a movement enthousiast and currently practice Parkour.
+							Continued learning. I watch video tutorials on web development and video production; for fun.
+						</p>
+						<p>
+							4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed tincidunt ante. Sed est lorem, convallis id facilisis nec, facilisis vitae lorem. Morbi dignissim sit amet erat a semper.
+							Ut bibendum ligula tortor, quis placerat mauris laoreet in. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec libero ante, hendrerit at quam at, consequat sodales ipsum.
+							Proin eu faucibus lectus. Sed vitae massa in nulla efficitur egestas. Nunc odio erat, sagittis a ultrices sed, malesuada non diam. Duis faucibus libero eu metus placerat, a lacinia urna blandit. Vivamus ac maximus ipsum.
+							Vivamus eu iaculis nulla. Vivamus nisi diam, pellentesque id dui vel, pulvinar posuere lectus. Quisque nibh turpis, tempus quis eros a, aliquam vehicula metus. Ut maximus ligula eros, nec posuere felis lobortis ac.
+						</p>
 					</div>
 				</div>
 			</section>
-			<section id="contact" class="row">
-					<div class="intro">
-						<h2>Contact</h2>
-						<p>Drop me a line. I'd love to hear from you.</p>
-					</div>
-					<div class="container">
-						<form action="messageSend.php">
-							<input type="text" placeholder="Name">
-							<input type="text" placeholder="Email">
-							<input type="textarea" placeholder="Message">
-							<input type="submit" value="Send">
-						</form>
-						<div class="social">
-							<div class="col-xs-3 col-sm-3 col-md-3"><a href="facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></a></i></div>
-							<div class="col-xs-3 col-sm-3 col-md-3"><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></a></i></div>
-							<div class="col-xs-3 col-sm-3 col-md-3"><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></a></i></div>
-							<div class="col-xs-3 col-sm-3 col-md-3"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></a></i></div>
+
+			<!-- Portfolio Section -->
+			<section id="portfolio">
+				<div class="intro">
+					<h2>Portfolio</h2>
+					<p>Various projects that I've had a hand in creating.</p>
+				</div>
+				<div class="content container-fluid">
+					<div class="col-sm-6 project">
+						<div class="img-container">
+							<a href="#"><img srcset="lib/img/bestapples-sm.png 300w, lib/img/bestapples-lg.png 1271w"></a>
 						</div>
 					</div>
+					<div class="col-sm-6 project">
+						<div class="img-container">
+							<a href="#"><img srcset="lib/img/dougink-sm.png 300w, lib/img/dougink-lg.png 1271w"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 project">
+						<div class="img-container">
+							<a href="#"><img srcset="lib/img/hardcoreflorist-sm.png 300w, lib/img/hardcoreflorist-lg.png 1271w"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 project">
+						<div class="img-container">
+							<a href="#"><img srcset="lib/img/auctioneer-sm.png 300w, lib/img/auctioneer-lg.png 1271w"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Section -->
+			<section id="contact" >
+				<div class="intro">
+					<h2>Contact</h2>
+					<p>Drop me a line. I'd love to hear from you.</p>
+				</div>
+				<div class="container-fluid">
+					<form action="messageSend.php">
+						<input type="text" placeholder="Name">
+						<input type="text" placeholder="Email">
+						<input type="textarea" placeholder="Message">
+						<input type="submit" value="Send">
+					</form>
+				</div>
+				<div class="social">
+					<a href="facebook.com" class="col-xs-3" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#" class="col-xs-3" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a href="#" class="col-xs-3" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#" class="col-xs-3" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+				</div>
 			</section>
 
 		</main>
 
-		<footer class="row">
-			<div class="container">
-				<p>Copyright &copy; 2016 - Die Laughing Design | <i class="fa fa-html5" aria-hidden="true"></i>	<i class="fa fa-css3" aria-hidden="true"></i> <i class="fa fa-info-circle" aria-hidden="true"></i>
-				</p>
-			</div>
-		</footer>
-
 	</div>
 
+	<footer>
+			<p>Copyright &copy; 2016 - Die Laughing Design | <i class="fa fa-html5" aria-hidden="true"></i>	<i class="fa fa-css3" aria-hidden="true"></i> <i class="fa fa-info-circle" aria-hidden="true"></i></p>
+	</footer>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"> -->
-	</script>
 	<script type="text/javascript" src="lib/js/custom.js"></script>
 
 </body>

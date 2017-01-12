@@ -1,7 +1,10 @@
 .intro {
   background: $white;
+  color: $black;
   position: relative;
+  z-index: 10;
   padding: 20px;
+  margin-bottom: 20px;
   box-shadow: 10px 10px 35px $black;
   &:before {
     content: "";
@@ -27,4 +30,7 @@
     height: 70px;
     overflow: hidden;
   }
+}
+.intro-gap {
+  margin-bottom: 0;
 }

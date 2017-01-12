@@ -1,0 +1,14 @@
+#portfolio {
+  min-height: 100vh;
+  background: $white;
+  .project {
+    margin-bottom: 10px;
+  }
+  .img-container {
+    border: 2px solid $black;
+    transition: 2s;
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

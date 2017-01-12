@@ -1,10 +1,19 @@
+.wrapper {
+	position: relative;
+	@media screen and (min-width: $phone) {
+		width: 100%;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 950px;
+		margin: 0 auto;
+	}
+}
+
 main {
 	#hero {
-		position: relative;
-		overflow: hidden;
 		min-height: 100vh;
-		@media screen and (min-width: $large) {
-			min-height: 100vh;
+		@media screen and (min-width: $desktop) {
+			margin: 0 auto;
 		}
 		.welcome {
 			h1 {
@@ -31,15 +40,6 @@ main {
 			img {
 				max-width: 100%;
 			}
-		}
-	}
-	#portfolio {
-		min-height: 100vh;
-		background: $white;
-		padding-top: 170px;
-		.project {
-			height: 300px;
-			background: $grey;
 		}
 	}
 }

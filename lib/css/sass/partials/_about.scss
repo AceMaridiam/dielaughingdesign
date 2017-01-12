@@ -1,5 +1,4 @@
 #about {
-  position: relative;
   min-height: 100vh;
   img {
     position: absolute;
@@ -13,4 +12,24 @@
       padding: 0;
     }
   }
+  .about-menu li {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .hide {
+    display: none;
+  }
+  // .who {
+  //   display: block;
+  // }
+  // .what {
+  //   display: none;
+  // }
+  // .hobbies {
+  //   display: none;
+  // }
+  // .facts {
+  //   display: none;
+  // }
 }

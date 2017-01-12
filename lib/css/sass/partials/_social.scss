@@ -1,30 +1,21 @@
 .social {
   text-align: center;
-  padding: 20px 0;
-  i {
-    padding: 20px;
-  }
-  .fa {
-    color: $black;
-    font-size: 2em;
-    transition: 1s;
-    &:hover {
-      color: $white;
-    }
-  }
-  div {
-    padding: 0;
-  }
-  div:first-child {
-    background: $black;
-  }
-  div:nth-child(2) {
-    background: $white;
-  }
-  div:nth-child(3) {
-    background: $black;
-  }
-  div:last-child {
-    background: $black;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+    a {
+      text-align: center;
+  		transition: 1s;
+  		cursor: pointer;
+  		color: $white;
+  		font-size: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: $black;
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
   }
 }

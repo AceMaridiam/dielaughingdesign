@@ -1,5 +1,12 @@
 footer {
 	background: $white;
-
+	color: $black;
 	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	p {
+		font-size: .9rem;
+		padding-bottom: 1rem;
+	}
 }
