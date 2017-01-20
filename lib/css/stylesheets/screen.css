@@ -89,16 +89,17 @@ img {
 p, a, span, li, h1, h2, h3, h4 {
   font-family: evilGenius;
   padding: 5px 0;
+  line-height: 1.2;
 }
 
-/* line 32, ../sass/base/_var.scss */
+/* line 33, ../sass/base/_var.scss */
 h1 {
   font-size: 2.5em;
   text-transform: uppercase;
   font-family: evilGenius;
 }
 
-/* line 37, ../sass/base/_var.scss */
+/* line 38, ../sass/base/_var.scss */
 h2 {
   font-size: 2em;
   padding: 10px 0;
@@ -1051,8 +1052,9 @@ section:last-of-type {
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 10px 10px 35px #000;
+  border-bottom: 5px solid #000;
 }
-/* line 9, ../sass/partials/_intro-bubble.scss */
+/* line 10, ../sass/partials/_intro-bubble.scss */
 .intro:before {
   content: "";
   position: absolute;
@@ -1074,6 +1076,7 @@ section:last-of-type {
     top: inherit;
     right: inherit;
     box-shadow: 10px 10px 35px #000;
+    border-bottom: 5px solid #000;
   }
 }
 @media screen and (max-height: 640px) {
@@ -1084,7 +1087,7 @@ section:last-of-type {
   }
 }
 
-/* line 34, ../sass/partials/_intro-bubble.scss */
+/* line 36, ../sass/partials/_intro-bubble.scss */
 .intro-gap {
   margin-bottom: 0;
 }
@@ -1175,18 +1178,17 @@ section:last-of-type {
 /* line 1, ../sass/partials/_portfolio.scss */
 #portfolio {
   min-height: 100vh;
-  background: #fff;
 }
-/* line 4, ../sass/partials/_portfolio.scss */
+/* line 3, ../sass/partials/_portfolio.scss */
 #portfolio .project {
   margin-bottom: 10px;
 }
-/* line 7, ../sass/partials/_portfolio.scss */
+/* line 6, ../sass/partials/_portfolio.scss */
 #portfolio .img-container {
   border: 2px solid #000;
   transition: 2s;
 }
-/* line 10, ../sass/partials/_portfolio.scss */
+/* line 9, ../sass/partials/_portfolio.scss */
 #portfolio .img-container:hover {
   opacity: .6;
 }

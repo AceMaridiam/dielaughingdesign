@@ -6,6 +6,7 @@
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 10px 10px 35px $black;
+  border-bottom: 5px solid $black;
   &:before {
     content: "";
     position: absolute;
@@ -25,6 +26,7 @@
     top: inherit;
     right: inherit;
     box-shadow: 10px 10px 35px $black;
+    border-bottom: 5px solid $black;
   }
   @media screen and (max-height: 640px) {
     height: 70px;

@@ -1,0 +1,36 @@
+{
+  "info": [
+    {
+      "about": [
+        {
+          "id": "#who",
+          "content": "Hi, I'm Paul. I've been studying web design and development for over 5 years; after transitioning from video production.
+                      I wanted to learn how to build dynamic multimedia driven websites for various projects I was involved in. The hobbie became an obsession and a drive to get better.
+                      Web development can be puzzle like, and I really like puzzles."
+        },
+        {
+          "id": "#what",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed tincidunt ante. Sed est lorem, convallis id facilisis nec, facilisis vitae lorem. Morbi dignissim sit amet erat a semper.
+                      Ut bibendum ligula tortor, quis placerat mauris laoreet in. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                      Donec libero ante, hendrerit at quam at, consequat sodales ipsum. Proin eu faucibus lectus. Sed vitae massa in nulla efficitur egestas. Nunc odio erat, sagittis a ultrices sed, malesuada non diam.
+                      Duis faucibus libero eu metus placerat, a lacinia urna blandit. Vivamus ac maximus ipsum. Vivamus eu iaculis nulla. Vivamus nisi diam, pellentesque id dui vel, pulvinar posuere lectus.
+                      Quisque nibh turpis, tempus quis eros a, aliquam vehicula metus. Ut maximus ligula eros, nec posuere felis lobortis ac."
+        },
+        {
+          "id": "#hobbies",
+          "content": "I enjoy video production on my terms; when I'm not bound by the restriction of a client.
+                      I'm a movement enthousiast and currently practice Parkour. Continued learning.
+                      I watch video tutorials on web development and video production; for fun."
+        },
+        {
+          "id": "#facts",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed tincidunt ante. Sed est lorem, convallis id facilisis nec, facilisis vitae lorem. Morbi dignissim sit amet erat a semper.
+                      Ut bibendum ligula tortor, quis placerat mauris laoreet in. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                      Donec libero ante, hendrerit at quam at, consequat sodales ipsum. Proin eu faucibus lectus. Sed vitae massa in nulla efficitur egestas. Nunc odio erat, sagittis a ultrices sed, malesuada non diam.
+                      Duis faucibus libero eu metus placerat, a lacinia urna blandit. Vivamus ac maximus ipsum. Vivamus eu iaculis nulla. Vivamus nisi diam, pellentesque id dui vel, pulvinar posuere lectus.
+                      Quisque nibh turpis, tempus quis eros a, aliquam vehicula metus. Ut maximus ligula eros, nec posuere felis lobortis ac."
+        },
+      ]
+    }
+  ]
+}
