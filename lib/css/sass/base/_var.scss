@@ -19,16 +19,19 @@ img {
 
 @import url(https://fonts.googleapis.com/css?family=Anton);
 @import url(https://fonts.googleapis.com/css?family=Anton|Dancing+Script);
-@font-face {
-    font-family: evilGenius;
-    src: url(../../font/evilgeniusbb_reg.otf);
-}
+@import url('https://fonts.googleapis.com/css?family=Cabin');
 
 // Typography
 p, a, span, li, h1, h2, h3, h4 {
-	font-family: evilGenius;
+	font-family: 'Cabin', sans-serif;
 	padding: 5px 0;
   line-height: 1.2;
+}
+a:focus,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
 }
 h1 {
 	font-size: 2.5em;
