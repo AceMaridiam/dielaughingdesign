@@ -1,9 +1,9 @@
 .intro {
   background: $white;
   color: $black;
-  position: relative;
-  z-index: 10;
-  padding: 20px;
+  position: relative;;
+  z-index: 50;
+  width: 100%;
   margin-bottom: 20px;
   box-shadow: 10px 10px 35px $black;
   border-bottom: 5px solid $black;
@@ -22,7 +22,7 @@
   @media screen and (max-width: $phone) {
     padding: 10px;
     z-index: 10;
-    width: inherit;
+    width: 100%;
     top: inherit;
     right: inherit;
     box-shadow: 10px 10px 35px $black;

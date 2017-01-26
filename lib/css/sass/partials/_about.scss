@@ -1,15 +1,17 @@
 #about {
   min-height: 100vh;
   img {
-    position: absolute;
-    z-index: 20;
-    max-height: 500px;
-    padding: 0 30%;
-    bottom: 225px;
+    // position: absolute;
+    // z-index: 20;
+    float: left;
     @media screen and (max-width: $tablet) {
-      bottom: 235px;
-      max-height: 400px;
+      max-height: 500px;
       padding: 0;
+      position: relative;
+      left: -60px;
+      p {
+        left: -60px;
+      }
     }
   }
   .about-menu li {

@@ -83,7 +83,7 @@ img {
 }
 
 /* line 25, ../sass/base/_var.scss */
-p, a, span, li, h1, h2, h3, h4 {
+p, a, span, li, h1, h2, h3, h4, input {
   font-family: 'Cabin', sans-serif;
   padding: 5px 0;
   line-height: 1.2;
@@ -99,16 +99,39 @@ a:active {
 
 /* line 36, ../sass/base/_var.scss */
 h1 {
-  font-size: 2.5em;
+  font-size: 5vw;
+  padding: 10px 20px;
   text-transform: uppercase;
-  font-family: evilGenius;
+  font-family: 'Cabin', sans-serif;
 }
 
-/* line 41, ../sass/base/_var.scss */
+/* line 42, ../sass/base/_var.scss */
 h2 {
-  font-size: 2em;
-  padding: 10px 0;
-  font-family: evilGenius;
+  font-size: 4vw;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-family: 'Cabin', sans-serif;
+}
+
+/* line 50, ../sass/base/_var.scss */
+.button {
+  transition: 1s;
+  cursor: pointer;
+  font-family: 'Cabin', sans-serif;
+  color: #fff;
+  background-color: #000;
+  outline: none;
+  border: none !important;
+}
+/* line 58, ../sass/base/_var.scss */
+.button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 63, ../sass/base/_var.scss */
+input {
+  outline: none;
 }
 
 /*!
@@ -985,15 +1008,6 @@ nav a {
   padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
-  transition: 1s;
-  cursor: pointer;
-  color: #fff;
-  background-color: #000;
-}
-/* line 14, ../sass/partials/_header.scss */
-nav a:hover {
-  background-color: #fff;
-  color: #000;
 }
 
 /* line 31, ../sass/partials/_header.scss */
@@ -1039,8 +1053,8 @@ section:last-of-type {
   background: #fff;
   color: #000;
   position: relative;
-  z-index: 10;
-  padding: 20px;
+  z-index: 50;
+  width: 100%;
   margin-bottom: 20px;
   box-shadow: 10px 10px 35px #000;
   border-bottom: 5px solid #000;
@@ -1063,7 +1077,7 @@ section:last-of-type {
   .intro {
     padding: 10px;
     z-index: 10;
-    width: inherit;
+    width: 100%;
     top: inherit;
     right: inherit;
     box-shadow: 10px 10px 35px #000;
@@ -1125,27 +1139,28 @@ section:last-of-type {
 }
 /* line 3, ../sass/partials/_about.scss */
 #about img {
-  position: absolute;
-  z-index: 20;
-  max-height: 500px;
-  padding: 0 30%;
-  bottom: 225px;
+  float: left;
 }
 @media screen and (max-width: 768px) {
   /* line 3, ../sass/partials/_about.scss */
   #about img {
-    bottom: 235px;
-    max-height: 400px;
+    max-height: 500px;
     padding: 0;
+    position: relative;
+    left: -60px;
+  }
+  /* line 12, ../sass/partials/_about.scss */
+  #about img p {
+    left: -60px;
   }
 }
-/* line 15, ../sass/partials/_about.scss */
+/* line 17, ../sass/partials/_about.scss */
 #about .about-menu li {
   color: blue;
   text-decoration: none;
   cursor: pointer;
 }
-/* line 20, ../sass/partials/_about.scss */
+/* line 22, ../sass/partials/_about.scss */
 #about .hide {
   display: none;
 }

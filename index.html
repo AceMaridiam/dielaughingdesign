@@ -15,10 +15,10 @@
 	<header>
 
 			<nav>
-				<a href="#hero" class="col-xs-3 col-sm-3 col-md-3 active">Home</a>
-				<a href="#about" class="col-xs-3 col-sm-3 col-md-3">About</a>
-				<a href="#portfolio" class="col-xs-3 col-sm-3 col-md-3">Portfolio</a>
-				<a href="#contact" class="col-xs-3 col-sm-3 col-md-3">Contacts</a>
+				<a href="#hero" class="col-xs-3 col-sm-3 col-md-3 button active">Home</a>
+				<a href="#about" class="col-xs-3 col-sm-3 col-md-3 button">About</a>
+				<a href="#portfolio" class="col-xs-3 col-sm-3 col-md-3 button">Portfolio</a>
+				<a href="#contact" class="col-xs-3 col-sm-3 col-md-3 button">Contact</a>
 			</nav>
 		</div>
 
@@ -44,23 +44,16 @@
 					<h2>About Me</h2>
 				</div>
 				<div class="container-fluid">
-					<div class="tab-content">
+					<img src="lib/img/paul-professional.png" alt="A picture of me look dapper.">
+					<div class="about-content">
 						<p>
 							Hi, I'm Paul.
 						<p/>
-						<p>I've been studying web design and development for over 5 years;
-							after transitioning from video production.
+						<p>
+							I've been studying web design and development for over 5 years;
+							after transitioning from video production.<br/><br/>
 							I wanted to learn how to build dynamic multimedia driven websites for various projects I was involved in.
 							The hobby became an obsession and a drive to get better.
-						</p>
-						<p>Things I do for fun include:
-							<ul>
-								<li>Parkour</li>
-								<li>Writing skits and screenplays</li>
-								<li>Video producing</li>
-								<li>Occasionally writing and recording music</li>
-								<li>Playing with my kitten</li>
-							</ul>
 						</p>
 					</div>
 				</div>
@@ -70,7 +63,6 @@
 			<section id="portfolio">
 				<div class="intro">
 					<h2>Portfolio</h2>
-					<p>Various projects that I've had a hand in creating.</p>
 				</div>
 				<div class="content container-fluid">
 					<div class="col-sm-6 project">
@@ -88,11 +80,11 @@
 							<a href="http://hardcoreflorist.com"><img srcset="lib/img/hardcoreflorist-sm.png 300w, lib/img/hardcoreflorist-lg.png 1271w"></a>
 						</div>
 					</div>
-					<div class="col-sm-6 project">
+					<!-- <div class="col-sm-6 project">
 						<div class="img-container">
 							<a href="http://mybenefitauctioneer.com"><img srcset="lib/img/auctioneer-sm.png 300w, lib/img/auctioneer-lg.png 1271w"></a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</section>
 
@@ -100,21 +92,20 @@
 			<section id="contact" >
 				<div class=" intro">
 					<h2>Contact</h2>
-					<p>Drop me a line. I'd love to hear from you.</p>
 				</div>
 				<div class="container-fluid">
 					<form action="messageSend.php">
 						<input type="text" placeholder="Name">
 						<input type="text" placeholder="Email">
 						<input type="textarea" placeholder="Message">
-						<input type="submit" value="Send">
+						<input type="submit" class="button" value="Send">
 					</form>
 				</div>
 				<div class="social">
-					<a href="facebook.com" class="col-xs-3" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="#" class="col-xs-3" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-					<a href="#" class="col-xs-3" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="#" class="col-xs-3" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/paul.r.anderson" class="button col-xs-3" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/paulryananderson" class="button col-xs-3" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/AceMaridiam" class="button col-xs-3" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://github.com/AceMaridiam" class="button col-xs-3" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 				</div>
 			</section>
 
@@ -123,7 +114,7 @@
 	</div>
 
 	<footer>
-			<p>Copyright &copy; 2016 - Die Laughing Design | <i class="fa fa-html5" aria-hidden="true"></i>	<i class="fa fa-css3" aria-hidden="true"></i> <i class="fa fa-info-circle" aria-hidden="true"></i></p>
+			<p>Copyright &copy; <span class="date"></span> - Die Laughing Design | <i class="fa fa-html5" aria-hidden="true"></i>	<i class="fa fa-css3" aria-hidden="true"></i> <i class="fa fa-info-circle" aria-hidden="true"></i></p>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

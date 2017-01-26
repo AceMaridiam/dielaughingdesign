@@ -7,14 +7,14 @@ nav {
     padding: 20px 0;
 		text-align: center;
 		text-transform: uppercase;
-		transition: 1s;
-		cursor: pointer;
-		color: $white;
-    background-color: $black;
-    &:hover {
-      background-color: $white;
-      color: $black;
-    }
+		// transition: 1s;
+		// cursor: pointer;
+		// color: $white;
+    // background-color: $black;
+    // &:hover {
+    //   background-color: $white;
+    //   color: $black;
+    // }
 		.glyphicon {
 		    @media screen and (max-width: $phone) {
 				// font-size: 1em;
