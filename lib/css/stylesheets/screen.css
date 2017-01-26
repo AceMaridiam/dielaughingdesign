@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Anton);
 @import url(https://fonts.googleapis.com/css?family=Anton|Dancing+Script);
-@import url("https://fonts.googleapis.com/css?family=Cabin");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,700");
 /* line 5, ../../../../../../../.rvm/gems/ruby-2.2.0@global/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -113,7 +113,12 @@ h2 {
   font-family: 'Cabin', sans-serif;
 }
 
-/* line 50, ../sass/base/_var.scss */
+/* line 48, ../sass/base/_var.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 53, ../sass/base/_var.scss */
 .button {
   transition: 1s;
   cursor: pointer;
@@ -123,13 +128,13 @@ h2 {
   outline: none;
   border: none !important;
 }
-/* line 58, ../sass/base/_var.scss */
+/* line 61, ../sass/base/_var.scss */
 .button:hover {
   background-color: #fff;
   color: #000;
 }
 
-/* line 63, ../sass/base/_var.scss */
+/* line 66, ../sass/base/_var.scss */
 input {
   outline: none;
 }
@@ -1136,31 +1141,32 @@ section:last-of-type {
 /* line 1, ../sass/partials/_about.scss */
 #about {
   min-height: 100vh;
+  position: relative;
 }
-/* line 3, ../sass/partials/_about.scss */
+/* line 4, ../sass/partials/_about.scss */
 #about img {
   float: left;
 }
 @media screen and (max-width: 768px) {
-  /* line 3, ../sass/partials/_about.scss */
+  /* line 4, ../sass/partials/_about.scss */
   #about img {
     max-height: 500px;
     padding: 0;
     position: relative;
     left: -60px;
   }
-  /* line 12, ../sass/partials/_about.scss */
+  /* line 13, ../sass/partials/_about.scss */
   #about img p {
     left: -60px;
   }
 }
-/* line 17, ../sass/partials/_about.scss */
+/* line 18, ../sass/partials/_about.scss */
 #about .about-menu li {
   color: blue;
   text-decoration: none;
   cursor: pointer;
 }
-/* line 22, ../sass/partials/_about.scss */
+/* line 23, ../sass/partials/_about.scss */
 #about .hide {
   display: none;
 }
@@ -1193,10 +1199,44 @@ section:last-of-type {
 #portfolio .img-container {
   border: 2px solid #000;
   transition: 2s;
+  position: relative;
+  overflow: hidden;
 }
-/* line 9, ../sass/partials/_portfolio.scss */
-#portfolio .img-container:hover {
-  opacity: .6;
+/* line 11, ../sass/partials/_portfolio.scss */
+#portfolio .img-container .overlay {
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  left: -100%;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+}
+/* line 20, ../sass/partials/_portfolio.scss */
+#portfolio .img-container .overlay img {
+  width: 75px;
+}
+/* line 25, ../sass/partials/_portfolio.scss */
+#portfolio .img-container:hover .overlay {
+  left: 0;
+}
+/* line 28, ../sass/partials/_portfolio.scss */
+#portfolio .img-container:hover .overlay {
+  bottom: 0;
+  width: 100%;
+}
+/* line 32, ../sass/partials/_portfolio.scss */
+#portfolio .project {
+  position: relative;
+}
+/* line 34, ../sass/partials/_portfolio.scss */
+#portfolio .project i {
+  position: absolute;
+  bottom: -5;
+  z-index: 10;
+  color: #fff;
+  font-size: 2rem;
 }
 
 /* line 1, ../sass/partials/_social.scss */

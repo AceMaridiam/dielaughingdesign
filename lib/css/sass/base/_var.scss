@@ -19,7 +19,7 @@ img {
 
 @import url(https://fonts.googleapis.com/css?family=Anton);
 @import url(https://fonts.googleapis.com/css?family=Anton|Dancing+Script);
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700');
 
 // Typography
 p, a, span, li, h1, h2, h3, h4, input {
@@ -44,6 +44,9 @@ h2 {
 	padding: 10px 20px;
   text-transform: uppercase;
 	font-family: 'Cabin', sans-serif;
+}
+strong {
+  font-weight: 700;
 }
 
 // Button
